@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DEDBDE;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    /* position: fixed; */
+    height: 80px;
+    background-color: #DEDBDE;
+    margin: 0 auto;
+    z-index: 2;
+}
+.in_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.logo_img{
+    width: 200px;
+}
+
+.nav_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav_buttons {
+    list-style-type: none;
+    font-family: 'Montserrat Medium', sans-serif;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.nav_buttons li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav_buttons ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+    list-style-type: none;
+    background-color: #DEDBDE;
+}
+
+.nav_buttons ul li {
+    padding-top: 10px;
+}
+
+.nav_buttons li:hover ul {
+    display: block;
+}
+
+.nav_buttons li a {
+    text-decoration: none;
+    color: #1F1C1F;
+    transition: 0.5s;
+}
+
+.nav_buttons li a:hover {
+    color: #B34EE9;
+    transition: 0.5s;
+}
+
+.subheader {
+    height: 730px;
+    /* background: url("../img/subheader1.jpg") center center/cover no-repeat; */
+    
+}
+.subheader_txt {
+    padding-top: 220px;
+    max-width: 900px;
+}
+
+.subheader_title {
+    margin-bottom: 30px;
+}
+
+.subheader_title_1 {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 40px;
+    color: #B34EE9;
+    line-height: 0px;
+}
+.subheader_title_2 {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 56px;
+    color: #FFFFFF;
+}
+.subheader_mintxt {
+    font-family: 'Roboto Thin', sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.subheader_button {
+    width: 350px;
+    height: 50px;
+    background-color:#B34EE9;
+    margin-top: 35px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subheader_button:hover {
+    background-color: #7813AE;
+    transition: 0.5s;
+}
+
+.subheader_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.video {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.video video {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+}
+
+.black-back {
+    display: block;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .55);
+    height: 100vh;
+}
+
+.about {
+    height: 650px;
+    background-color: #DEDBDE;
+    border:#000;
+
+}
+.about_hi {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto Medium', sans-serif;
+    padding-top: 75px;
+    color:#3B3B3B;
+    font-weight: 600;
+}
+.about_company {
+    padding-top: 10px;
+    font-size: 46px;
+    font-family: 'Roboto Bold';
+    text-align: center;
+}
+.about_txt {
+    font-size: 24px;
+    font-family: 'Montserrat Light', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+}
+
+.about_txt span {
+    font-size: 35px;
+    font-family: 'Roboto Bold', sans-serif;
+}
+
+.advantages {
+    height: 400px;
+}
+
+.advantages_title_2 {
+    font-size:46px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-align: center;
+}
+
+.about_advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.about_advantages_block {
+    width: 300px;
+    height: 250px;
+    background-color: #DEDBDE;
+    box-shadow:
+   0px 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+   position: relative;
+}
+
+.about_advantages_img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.about_advantages_img:hover {
+    width: 100px;
+    transition: .3s;
+}
+
+.about_advantages_text {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto Medium', sans-serif;
+    position: absolute;
+    top: 100px;
+}
+
+.services {
+    padding: 50px;
+    background-color: #DEDBDE;
+    height: 900px;
+}
+.title_1 {
+    font-size: 40px;
+    font-family: 'Roboto Medium', sans-serif;
+    color:#B34EE9;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.title_2 {
+    font-size:46px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-align: center;
+}
+.services_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.services_block {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 480px;
+    height: 300px;
+    margin: 6px 0px;
+    padding: 0 3px;                
+    background-color: #000;
+    border-radius: 0.3em;
+    background-size: 500px;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#sb1 { 
+    background-image: url("../img/уникальность.jpg");
+}
+#sb2 {
+    background-image: url("../img/адаптация.jpg");
+}
+#sb3 {
+    background-image: url("../img/рейтинг.jpg");
+}
+#sb4 {
+    background-image: url("../img/голосовой.jpg");
+}
+
+.services_block:hover {
+    background-size: 580px;
+    transition: 0.5s;
+}
+
+.services_block_h {
+    padding-top: 15px;
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.services_block_text {
+    text-align: center;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.services_block_push {
+    width: 310px;
+    height: 35px;
+    padding-top: 5px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 1em;
+    position: absolute;
+    display: block;
+    text-align: center;
+    color: #000;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat Bold', sans-serif;
+    text-decoration: none;
+    background-color:#FFF;
+    transition: .4s;
+}
+.services_block_push:hover {
+    background-color: #FF8C00;
+    color:#FFF;
+    transition: .4s;
+}
+
+.price {
+    padding: 50px;
+    background-color: #DEDBDE;
+    height: 940px;
+}
+.price_title_1 {
+    font-size: 40px;
+    font-family: 'Roboto Medium', sans-serif;
+    color:#FF8C00;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.price_title_2 {
+    font-size:46px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-align: center;
+}
+
+
+.contacts {
+    height: 600px;
+    background: url("../img/пара.jpg") center center/cover no-repeat;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.contacts_block {
+    height: 350px;
+    background-color: #ececec;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.contacts_title {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contacts_subtitle {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contacts_text {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.contacts_messengers {
+    margin: 0 auto;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts_messenger {
+    display: block;
+    width: 60px;
+}
+
+.contacts_messenger_img {
+    width: 60px;
+}
+.telephones a{
+    color:#000;
+    text-decoration: none;
+}
+
+.footer {
+    height: 180px;
+    background-color: #303030;
+}
+
+.footer_block {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo_img {
+    display: block;
+    width: 200px;
+    padding-right: 5px;
+}
+
+.copyright {
+    color: #ececec;
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer_telephone {
+    right: 0;
+}
+
+.footer_telephone_a {
+    display: block;
+    font-family: 'Montserrat Light', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    transition: .3s;
+    font-size: 24px;
+    right: 0;
+    text-align: right;
+}
+
+.footer_telephone_a:hover {
+    color: #AFAFAF;
+    transition: .3s;
+}
+.footer_address {
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    text-align: right;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* button up */
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #1A1A1A;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #1A1A1A; /* цвет заднего фона при наведении */
+    }
+  }
+
+.price_info_button {
+    display: block;
+    width: 350px;
+    height: 50px;
+    background-color:#FF8C00;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.price_info_button:hover {
+    background-color: #CD5A00;
+    transition: .5s;
+}
+
+.details_service_img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.details_service p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Стили формы обр связи */
+
+.form_application {
+    height: 850px;
+    padding-top: 50px;
+}
+
+.form_application_div {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.obratnuj-zvonok{
+	width: 100%;
+	max-width: 350px;
+}
+.form-zvonok{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.form-zvonok div{
+	padding: 15px 0;
+}
+.bot-send-mail{
+	box-sizing: border-box;
+	width: 100%;
+}
+.form-zvonok label,.form-zvonok input{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form-zvonok label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-zvonok input{
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.form-zvonok label span{
+	color: red;
+}
+.form-zvonok .bot-send-mail{
+	padding: 15px;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	background-color: #B34EE9;
+	cursor: pointer;
+	border: 3px #B34EE9 solid;
+	border-radius: 5px;
+}
+.form-zvonok .bot-send-mail:hover{
+	color: #B34EE9;
+	background-color: #fff;
+}

@@ -1,0 +1,381 @@
+@media (max-width: 1225px) {
+    .advertisement_left {
+        display: none;
+    }
+    .advertisement_right {
+        display: none;
+    }
+    .advertisement_left_services {
+        display: none;
+    }
+    .advertisement_right_services {
+        display: none;
+    }
+}
+
+@media (max-width: 1084px) {
+    .services_block {
+        width: 400px;
+    }
+
+    .price_block {
+        width: 400px;
+    }
+    .price_block_icon {
+        width: 80px;
+    }
+}
+
+@media (max-width: 990px) {
+    .nav .nav_buttons {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 924px) {
+    .about_advantages {
+        flex-direction: column;
+    }
+    .about_advantages_block {
+        margin-top: 15px;
+    }
+    .advantages {
+        height: 900px;
+    }
+
+    .services {
+        height: 1500px;
+    }
+
+    .price {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 924px) {
+    .nav_buttons li {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contacts_block {
+        width: 90%;
+    }
+}
+
+@media (max-width: 874px) {
+    .nav_buttons li {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 843px) {
+    .nav_buttons li {
+        margin: 0 4px;
+        font-size: 12px;
+    }
+    .contacts_text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 812px) {
+    .contacts_text span {
+        display: block;
+    }
+    .nav_buttons li {
+        margin: 0 4px;
+    }
+    .nav_buttons {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: fixed;
+    }
+    .nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .9);
+        justify-content: space-around;
+        align-items: center;
+        transition: .5s all;
+    }
+
+    .nav.nav_active {
+        left: 0;
+        transition: .5s all;
+    }
+
+    .nav_buttons {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .nav_buttons li a {
+        font-size: 28px;
+        color: #fff;
+    }
+    .nav_buttons li {
+        margin-top: 30px;
+    }
+
+    .nav_buttons li:hover ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 24px;
+        width: 50px;
+
+    }
+    .hamburger span {
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #000;
+        margin-bottom: 8px;
+        transition: .5s all;
+    }
+    .hamburger.hamburger_active span:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+    .hamburger.hamburger_active span:nth-child(2) {
+        display: none;
+    }
+    .hamburger.hamburger_active span:nth-child(3) {
+        transform: rotate(45deg);
+    }
+    .hamburger.hamburger_active span {
+        margin-bottom: -5px;
+        transition: .5s all;
+    }
+    .hamburger.hamburger_active {
+        margin-top: 10px;
+    }
+    .map {
+        height: 0px;
+        display: none;
+    }
+    .where_photo {
+        height: 500px;
+        display: block;
+    }
+    .where_text {
+        height: 50px;
+        display: block;
+    }
+    .gallery {
+        height: 800px;
+    }
+}
+
+@media (max-width: 678px) {
+    .contacts_title {
+        padding-top: 20px;
+    }
+    .contacts_text {
+        margin-top: 15px;
+    }
+    .telephones {
+        height: 40px;
+    }
+    .gallery {
+        height: 720px;
+    }
+}
+
+@media (max-width: 658px) {
+    .title_1 {
+        font-size: 35px;
+    }
+    .title_2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 626px) {
+    .nav_buttons li a {
+        font-size: 22px;
+    }
+    .footer_telephone_a {
+        font-size: 18px;
+    }
+    .footer_address {
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    .about_txt {
+        font-size: 20px;
+    }
+    .gallery {
+        height: 660px;
+    }
+}
+
+@media (max-width: 588px) {
+    .title_1 {
+        font-size: 30px;
+    }
+    .title_2 {
+        font-size: 35px;
+    }
+    .gallery {
+        height: 600px;
+    }
+}
+
+@media (max-width: 503px) {
+    .footer_logo_img {
+        width: 150px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .footer_telephone_a {
+        font-size: 18px;
+    }
+    .footer_address {
+        font-size: 12px;
+    }
+    .nav {
+        width: 60%;
+    }
+    .gallery {
+        height: 530px;
+    }
+}
+
+@media (max-width: 493px) {
+    .contacts_title {
+        font-size: 35px;
+    }
+    .contacts_subtitle {
+        font-size: 18px;
+    }
+    .contacts_text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 481px) {
+    .title_1 {
+        font-size: 22px;
+    }
+    .title_2 {
+        font-size: 28px;
+    }
+
+    .about_hi {
+        font-size: 15px;
+    }
+    .about_company {
+        font-size: 35px;
+    }
+    .about_txt {
+        font-size: 18px;
+    }
+    .subheader_title_1 {
+        font-size: 35px;
+    }
+    .subheader_title_2 {
+        font-size: 42px;
+    }
+    .subheader_mintxt {
+        font-size: 20px;
+    }
+    .price_block_icon {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .services {
+        padding: 10px;
+    }
+    .price {
+        padding: 10px;
+    }
+    .price_block_h {
+        font-size: 22px;
+    }
+    .price_block_text {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .price_block_button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .footer {
+        height: 250px;
+    }
+    .footer_block {
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-around;
+    }
+    .footer_telephone_a {
+        text-align: center;
+    }
+    .contacts_text span a {
+        display: block;
+        height: 20px;
+    }
+    .telephones {
+        height: 80px;
+    }
+    .gallery {
+        height: 450px;
+    }
+
+}
+
+@media (max-width: 351px) {
+    .subheader_button {
+        width: 300px;
+    }
+    .services_block_push {
+        width: 280px;
+    }
+    .about_hi {
+        padding-top: 30px;
+    }
+    .advantages {
+        height: 930px;
+    }
+    .nav_buttons li a {
+        font-size: 18px;
+    }
+    .gallery {
+        height: 420px;
+    }
+}
+
+@media (max-width: 322px) {
+    .contacts_title {
+        padding-top: 10px;
+    }
+    .gallery {
+        height: 400px;
+    }
+}
