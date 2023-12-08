@@ -11,6 +11,17 @@
     .advertisement_right_services {
         display: none;
     }
+    .video {
+        display: none;
+    }
+    .black-back {
+        background: none;
+    }
+    .subheader {
+        background: url("../img/фон_меньший2.jpg") center center/cover no-repeat;
+        
+    }
+
 }
 
 @media (max-width: 1084px) {
@@ -78,6 +89,9 @@
     }
     .contacts_text {
         margin-top: 20px;
+    }
+    .about {
+        height: 850px;
     }
 }
 
@@ -233,6 +247,9 @@
     }
     .gallery {
         height: 600px;
+    }
+    .services_block_text {
+        padding-top: 10px;
     }
 }
 
