@@ -81,6 +81,7 @@ ul {
 .subheader {
     height: 730px;
     /* background: url("../img/subheader1.jpg") center center/cover no-repeat; */
+    background: url("../img/фон_меньший2.jpg") center center/cover no-repeat;
     
 }
 .subheader_txt {
